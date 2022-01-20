@@ -1,6 +1,4 @@
 def catalan_(n, d):
-    if n == 0:
-        return 1
     result = 0
     if d.get(n):
         return d[n]
@@ -12,7 +10,7 @@ def catalan_(n, d):
 
 
 def catalan(n):
-    d = {}
+    d = {0: 1}
     return catalan_(n, d)
 
 
